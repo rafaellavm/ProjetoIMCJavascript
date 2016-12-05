@@ -1,9 +1,18 @@
+var tdPeso = document.getElementById('peso-2');
+var tdAltura = document.getElementById('altura-2');
+
+//textContent pega o peso
+var peso = tdPeso.textContent;
+var altura = tdAltura.textContent;
+
 // peso / altura * altura
-var peso = 64;
-var altura = 1.67;
 
 if (altura != 0) {
     var imc = peso / (altura * altura);
+
+    var tdIMC = document.getElementById('imc-2');
+    tdIMC.textContent = imc;
+
     console.log(imc);
 }
 else{
