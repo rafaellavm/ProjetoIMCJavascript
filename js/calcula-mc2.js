@@ -1,9 +1,3 @@
-//função para calcular o imc
-// peso / altura * altura
-//função feita para ser chamada a partir de um objeto
-//função não pode ser global
-function calculaIMC() {}
-
 //pegar todos os elementos dessa classe
 //isso transforma o trsPacientes num array de trs
 var trsPacientes = document.getElementsByClassName('paciente');
@@ -27,6 +21,7 @@ for (var posicaoAtual = 0; posicaoAtual <= trsPacientes.length - 1; posicaoAtual
 
             //a propriedade é uma função
             //funcao anônima, função que não tem nome
+            //é uma função que só serve pro paciente, não precisa ser global
             , pegaImc: function () {
                 if (this.altura != 0) {
                     var imc = this.peso / (this.altura * this.altura);
