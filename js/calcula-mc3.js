@@ -1,6 +1,8 @@
-function calculaTodosImcs() {
+var botao = document.getElementById('calcula-imcs');
 
-    //pegar todos os elementos dessa classe
+botao.addEventListener('click',function(){
+
+     //pegar todos os elementos dessa classe
     //isso transforma o trsPacientes num array de trs
     var trsPacientes = document.getElementsByClassName('paciente');
 
@@ -38,15 +40,16 @@ function calculaTodosImcs() {
 
         //console.log(imc);
     });
-}
+});
 
-var botao = document.getElementById('calcula-imcs');
+
+
 
 //'ouve' um evento
-botao.addEventListener('click',calculaTodosImcs);
+/*botao.addEventListener('click',calculaTodosImcs);
 botao.addEventListener('click',function(){
     console.log('Calculando imcs');
-});
+});*/
 
 
 
